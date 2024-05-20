@@ -18,7 +18,6 @@ func main() {
 
 	fmt.Println("Start worker which will be stopped by context timeout")
 	ctx, cancel = context.WithTimeout(context.Background(), 2*time.Second)
-	defer cancel()
 	go workerContext(ctx, "With timeout")
 	time.Sleep(4 * time.Second)
 

@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func intersect(a, b []int) (intersection []int) {
-	m := make(map[int]uint8)
+	m := make(map[int]int)
 
 	for _, v := range a {
 		m[v]++

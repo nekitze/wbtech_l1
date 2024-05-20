@@ -4,8 +4,11 @@ import "fmt"
 
 func setBit(num, val, pos int64) int64 {
 	if val == 1 {
+		// 1 << pos - битовый сдвиг единицы на pos лево
+		// | - битовое ИЛИ
 		return num | 1<<pos
 	} else {
+		// &^ битовое исключаюеще ИЛИ
 		return num &^ (1 << pos)
 	}
 }
