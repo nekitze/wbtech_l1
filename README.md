@@ -43,7 +43,6 @@
     m := map[string]string{"first": "data"}
     m := make(map[string]string)
     m := make(map[string]string, 10)
-    m := new(map[string]string)
 
     ```
 10. Что выведет данная программа и почему?
